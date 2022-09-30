@@ -55,6 +55,10 @@
   outline: none;
   list-style: none; }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 body {
   color: #fff;
   background: #0c0f16;
@@ -4542,7 +4546,7 @@ body {
     font-weight: 300;
     margin-bottom: 30px; }
   .footer-half .cont .logo {
-    width: 55px;
+    width: 135px;
     margin-bottom: 30px; }
   .footer-half .cont .con-info li {
     margin-top: 10px;
