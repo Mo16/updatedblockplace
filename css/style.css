@@ -63,6 +63,11 @@
     overflow-x: hidden;
 }
 
+.firstbox{
+  background-color: #ffa624;
+  color: black;
+}
+
 body {
   color: #fff;
   background: #0c0f16;
