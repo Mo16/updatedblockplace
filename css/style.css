@@ -59,6 +59,10 @@
     scroll-behavior: smooth;
   }
 
+  html,body{
+    overflow-x: hidden;
+}
+
 body {
   color: #fff;
   background: #0c0f16;
@@ -2699,7 +2703,7 @@ body {
   display: flex; }
   .about .ftbox ul li {
     width: 100%;
-    padding: 35px 25px;
+    padding: 35px 18px;
     text-align: center;
     background: #11141b;
     border-radius: 5px;
