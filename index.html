@@ -409,7 +409,8 @@
                         <div class="item">
                             <span class="icon pe-7s-cloud-download"></span>
                             <h3 class="custom-font">$<span class="count">250,000,000</span> +</h3>
-                            <p class="wow txt" data-splitting>Combined we have helped projects capitals reach a total of over $250m</p>
+                            <p class="wow txt" data-splitting>Combined we have helped projects capitals reach a total of
+                                over $250m</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -479,11 +480,15 @@
 
                                             <div class="social-icon text-center mt-3">
                                                 <a href="https://t.me/daviral"><i class="fab fa-telegram"></i></a>
-                                                <a href="https://twitter.com/mochoudhury_dev"><i class="fab fa-twitter"></i></a>
-                                                <a href="https://instagram.com/mochoudhury.dev"><i class="fab fa-instagram"></i></a>
-                                                <a href="https://discord.com/users/204290148165353473"><i class="fab fa-discord"></i></a>
+                                                <a href="https://twitter.com/mochoudhury_dev"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <a href="https://instagram.com/mochoudhury.dev"><i
+                                                        class="fab fa-instagram"></i></a>
+                                                <a href="https://discord.com/users/204290148165353473"><i
+                                                        class="fab fa-discord"></i></a>
                                                 <a href="https://mochoudhury.dev"><i class="fa fa-globe"></i></a>
-                                                <a href="https://www.linkedin.com/in/mohammed-choudhury-817737214/"><i class="fab fa-linkedin"></i></a>
+                                                <a href="https://www.linkedin.com/in/mohammed-choudhury-817737214/"><i
+                                                        class="fab fa-linkedin"></i></a>
                                             </div>
                                             <h6 class="text-center mt-3">CEO / Founder</h6>
                                             <p class="text-center">Mohammed Choudhury</p>
@@ -501,8 +506,10 @@
                                             <img src="img/team/sahal.png" alt="" class="imago wow">
 
                                             <div class="social-icon text-center mt-3">
-                                                <a href="https://twitter.com/stonkmaster6969"><i class="fab fa-twitter"></i></a>
-                                                <a href="https://instagram.com/sahalameeen"><i class="fab fa-instagram"></i></a>
+                                                <a href="https://twitter.com/stonkmaster6969"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <a href="https://instagram.com/sahalameeen"><i
+                                                        class="fab fa-instagram"></i></a>
                                             </div>
                                             <h6 class="text-center mt-3">CTO / Co-Founder</h6>
                                             <p class="text-center">Sahal Ameen</p>
@@ -578,7 +585,8 @@
                                     <div class="item wow fadeIn" data-wow-delay=".4s">
                                         <div class="img">
                                             <img src="img/portfolio/non.png" alt="">
-                                            <a href="https://nationofnowhere.com" class="link" data-splitting>Nation of Nowhere</a>
+                                            <a href="https://nationofnowhere.com" class="link" data-splitting>Nation of
+                                                Nowhere</a>
                                         </div>
                                     </div>
                                 </div>
@@ -586,7 +594,8 @@
                                     <div class="item wow fadeIn" data-wow-delay=".7s">
                                         <div class="img">
                                             <img src="img/portfolio/wsb.gif" alt="">
-                                            <a href="https://wsbarts.netlify.app/" class="link" data-splitting>Wallstreetbets</a>
+                                            <a href="https://wsbarts.netlify.app/" class="link"
+                                                data-splitting>Wallstreetbets</a>
                                         </div>
                                     </div>
                                 </div>
@@ -602,19 +611,20 @@
                                     <div class="item wow fadeIn" data-wow-delay=".3s">
                                         <div class="img">
                                             <img src="img/portfolio/cloudtoken.gif" alt="">
-                                            <a href="https://cloudtokenerc.netlify.app/" class="link" data-splitting>Cloud Token</a>
+                                            <a href="https://cloudtokenerc.netlify.app/" class="link"
+                                                data-splitting>Cloud Token</a>
                                         </div>
                                     </div>
                                 </div>
 
-                   
+
                             </div>
                             <div class="sec-head custom-font">
                                 <h6 class="text-center mt-3">
                                     And many more...
                                 </h6>
                             </div>
-                   
+
                         </div>
                     </div>
                 </div>
@@ -761,7 +771,7 @@
 
                             <h4 class="extra-title mb-50">Get In Touch.</h4>
 
-                            <form id="contact-form" name="contact" method="POST" data-netlify="true">
+                            <form id="contact-form" name="contact" method="POST"  data-netlify="true" onSubmit="submit" >
 
                                 <div class="messages"></div>
 
@@ -900,6 +910,23 @@
 
     <!-- plugins -->
     <script src="js/plugins.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+            Host: "smtp.yourisp.com",
+            Username: "username",
+            Password: "password",
+            To: 'them@website.com',
+            From: "you@isp.com",
+            Subject: "This is the subject",
+            Body: "And this is the body"
+        }).then(
+            message => alert(message)
+        );
+        }
+
+    </script>
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
