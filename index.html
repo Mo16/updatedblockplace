@@ -771,7 +771,7 @@
 
                             <h4 class="extra-title mb-50">Get In Touch.</h4>
 
-                            <form id="contact-form" name="contact" method="POST"  data-netlify="true" onsubmit="submit" onSubmit="submit" >
+                            <form id="contact-form" name="contact" method="POST"  data-netlify="true" onsubmit="submit" netlify-honeypot="bot-field" onSubmit="submit" >
 
                                 <div class="messages"></div>
 
@@ -797,6 +797,7 @@
                                             required="required"></textarea>
                                     </div>
 
+                                    <div data-netlify-recaptcha></div>
                                     <button type="submit" class="btn-curve btn-lit"><span>Send Message</span></button>
                                 </div>
                             </form>
